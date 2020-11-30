@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans' ,sans-serif;
+    background-color: #f7f8fc;
+}
+
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f8fc;
+    height: 100vh;
+}
+
+.login a {
+    text-decoration: none;
+    color: #2762eb;
+}
+
+.container-login {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 20px solid #dce7ff;
+    width: 1000px;
+    max-width: 100%;
+    display: flex;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+
+}
+
+form {
+    border-right: 3px solid #ecf2ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    flex: 1;
+}
+
+.form-control {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.label1 {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input1:not([type="checkbox"]) {
+    background-color: transparent;
+    border: 2px solid #ecf2ff;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input1:not([type="checkbox"]):hover {
+    border: 2px solid #9babcc;
+    transition: ease-out 400ms;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.checkbox-container a {
+    margin-left: auto;
+}
+
+.checkbox-container label {
+    color: #7a7e8c;
+    font-weight: normal;
+}
+
+.btn {
+    background-color: #141c2c;
+    border: 3px solid #141c2c;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.btn:hover {
+    color: #0077b6;
+    transition: ease-out 400ms;
+}
+
+.btn-ghost {
+    background-color: transparent;
+    border-color: #ecf2ff;
+    color: #141c2c;
+}
+
+.btn-ghost:hover {
+    border: 3px solid #141c2c;
+    transition: ease-out 400ms;
+    color: #141c2c;
+}
+
+.btn img {
+    margin-right: 5px;
+    width: 20px;
+}
+
+.sign-up a {
+    padding-left: 5px;
+}
+
+.features {
+    flex: 1.5;
+    padding: 40px;
+}
+
+.feature {
+    padding-left: 30px;
+    position: relative;
+    margin: 40px 0;
+}
+
+.feature i {
+    color: #141c2c;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.feature h3 {
+    margin: 0;
+}
+
+.feature p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .container-login {
+        flex-direction: column;
+    }
+
+    form {
+        border-right: 0;
+    }
+}
+
+
+
+/* second form/ form validition */
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #364d59;
+}
+
+.form2 > h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.form_container {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    background-color: #edf2f4;
+    
+}
+
+.header {
+    border-bottom: 3px solid #f0f0f0;
+    background-color: #f7f7f7;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    padding: 20px 40px 40px 40px;
+    width: 100%;
+}
+
+.form__control2 {
+    padding-bottom: 10px;
+    width: 100%;
+    position: relative;
+}
+
+
+.label2 {
+    margin: 8px 0;
+    display: inline-block;
+}
+
+.input2 {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #f0f0f0;
+    display: block;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+
+.input2:focus {
+    border-color: #777;
+}
+
+.form__control2 > i {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form__control2 small {
+    color: #d5727a;
+    position: absolute;
+    bottom: 0;;
+    left: 0;
+    visibility: hidden;
+}
+
+.form__control2.success .input2 {
+	border-color: #78ba94;
+}
+
+.form__control2.error .input2 {
+	border-color: #d5727a;
+}
+
+.form__control2.success > i.fa-check-circle {
+	color: #78ba94;
+	visibility: visible;
+}
+
+.form__control2.error > i.fa-exclamation-circle {
+	color: #d5727a;
+	visibility: visible;
+}
+
+
+.form__control2.error small {
+	visibility: visible;
+}
+
+.btn2 {
+    display: block;
+    border: none;
+    color: black;
+    background-color: #c0d0d8;
+    font-family: inherit;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    outline: none;
+    margin-top: 10px;
+    padding: 12px 22px;
+    width: 100%;
+    transition: ease-in-out .35s;
+}
+
+.btn2:hover {
+    background-color: #364d59;
+    color: white;
+}
+
+.btn2:focus {
+    background-color: #27373f;
+    color: white;
+}
+
+.btn2:active {
+    background-color: #27373f;
+    color: white;
+}

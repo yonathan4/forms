@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>forms</title>
+</head>
+<body>
+
+    <section class="login">
+        <div class="container-login">
+            <form>
+                <button class="btn btn-ghost">
+                    <img src="./images/google.png" alt="">
+                    Log in with Google
+                </button>
+                <span>Or</span>
+                <div class="form-control">
+                    <label for="Email" class="label1">Email</label>
+                    <input type="Email" id="Email" placeholder="Email" class="input1">
+                </div>
+                <div class="form-control">
+                    <label for="Password" class="label1">Password</label>
+                    <input type="Password" id="Password" placeholder="Password" class="input1">
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="Remeber" class="input1">
+                    <label for="Remeber" class="label1">Remeber Me</label>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <button class="btn">Log In</button>
+                <small class="sign-up">Dont have an account?<a href="3">Sign Up</a></small>
+            </form>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-code"></i>
+                    <h3>Development</h3>
+                    <p>A modern and clean design system for developing fast and powerful
+                        web interfaces.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-gift"></i>
+                    <h3>Features</h3>
+                    <p>A modern and clean design system for developing fast and powerful
+                        web interfaces.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-edit"></i>
+                    <h3>Updates</h3>
+                    <p>A modern and clean design system for developing fast and powerful
+                        web interfaces.</p>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <div class="form2">
+        <h2>Try to submit with at least 1 invalid input</h2>
+        <div class="form_container">
+            <div class="header">
+                <h2>Create Account</h2>
+            </div>
+            <form id="form" class="form">
+                <div class="form__control2">
+                    <label for="username" class="label2">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Your Username" class="input2">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form__control2">
+                    <label for="username" class="label2">Email</label>
+                    <input type="email" placeholder="example@Email.com" id="email" class="input2" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form__control2">
+                    <label for="username" class="label2">Password</label>
+                    <input type="password" placeholder="Password" id="password" class="input2"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form__control2">
+                    <label for="username" class="label2">Password check</label>
+                    <input type="password" placeholder="Password" id="password2" class="input2"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <button type="submit" class="btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+
+</body>
+</html>
